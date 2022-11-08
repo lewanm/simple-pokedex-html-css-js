@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="pokedex">
+
+        <div class="pokedex-left">
+            <div class="poke-marco">
+                <!-- <div class="poke-imagen"></div> -->
+            </div>
+        </div>
+        
+        <div class="pokedex-right">
+            <div class="poke-info"></div>
+            <div class="numbers">
+                <button class="number" onclick="completeInput(0)"=>0</button>
+                <button class="number" onclick="completeInput(1)">1</button>
+                <button class="number" onclick="completeInput(2)">2</button>
+                <button class="number" onclick="completeInput(3)">3</button>
+                <button class="number" onclick="completeInput(4)">4</button>
+                <button class="number" onclick="completeInput(5)">5</button>
+                <button class="number" onclick="completeInput(6)">6</button>
+                <button class="number" onclick="completeInput(7)">7</button>
+                <button class="number" onclick="completeInput(8)">8</button>
+                <button class="number" onclick="completeInput(9)">9</button>
+            </div>
+            <div class="flechas-input">
+                <div class="flechas">
+                    <div class="flecha-izquierda" onclick="beforePokemon()">&#10094;</div>
+                    <div class="flecha-derecha" onclick="nextPokemon()">&#10095;</div>
+                </div>
+                <input class="id-search" maxlength="3" type="text" name="id-search" id="id-search">
+                <div class="search-button" onclick="searchPokemon()"></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="buttons.js"></script>
+    <script src="fetching.js"></script>
+</body>
+</html>
